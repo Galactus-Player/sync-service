@@ -1,0 +1,15 @@
+{
+  "name": "497s-exemplar",
+  "version": "1.0.0",
+  "description": "An example microservice for 497s",
+  "main": "src/index.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/galactus-player/exemplar.git"
+  },
+  "author": "Team Galactus",
+  "bugs": {
+    "url": "https://github.com/galactus-player/exemplar/issues"
+  },
+  "homepage": "https://github.com/galactus-player/exemplar#readme"
+}
