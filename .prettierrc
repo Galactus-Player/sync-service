@@ -1,6 +1,6 @@
 {
-  "semi": false, // No semicolons
-  "trailingComma": "always", // Commas on every line, even the last
-  "singleQuote": true, // Prefer single quotes for strings
-  "printWidth": 80 // Hard limit of 80 chars per line
+  "semi": false,
+  "trailingComma": "all",
+  "singleQuote": true,
+  "printWidth": 80
 }
