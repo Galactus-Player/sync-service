@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "An example microservice for 497s",
   "main": "src/index.ts",
+  "scripts": {
+    "format": "prettier --config .prettierrc 'src/**/*.ts' --write",
+    "autoformat": "onchange 'src/**/*.ts' -- prettier --write {{changed}}"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/galactus-player/exemplar.git"
@@ -11,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/galactus-player/exemplar/issues"
   },
-  "homepage": "https://github.com/galactus-player/exemplar#readme"
+  "homepage": "https://github.com/galactus-player/exemplar#readme",
+  "devDependencies": {
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "onchange": "^7.0.2",
+    "prettier": "^2.1.2"
+  }
 }
