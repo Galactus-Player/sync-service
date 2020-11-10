@@ -1,33 +1,31 @@
 {
-  "name": "497s-exemplar",
+  "name": "497s-sync-service",
   "version": "1.0.0",
-  "description": "An example microservice for 497s",
-  "main": "src/index.ts",
+  "description": "Synchronizes video players across galactus clients",
+  "main": "sync-server.ts",
   "scripts": {
-    "start": "ts-node --files src/",
-    "format": "prettier --config .prettierrc 'src/**/*.ts' --write",
-    "autoformat": "onchange 'src/**/*.ts' -- prettier --write {{changed}}"
+    "start": "ts-node sync-server.ts",
+    "format": "prettier --config .prettierrc 'src/**/*.ts' --write"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/galactus-player/exemplar.git"
+    "url": "git+https://github.com/galactus-player/sync-service.git"
   },
-  "author": "Team Galactus",
+  "author": "npm",
   "bugs": {
-    "url": "https://github.com/galactus-player/exemplar/issues"
+    "url": "https://github.com/galactus-player/sync-service/issues"
   },
-  "homepage": "https://github.com/galactus-player/exemplar#readme",
+  "homepage": "https://github.com/galactus-player/sync-service#readme",
   "devDependencies": {
+    "@types/node": "^14.11.2",
     "@types/socket.io": "^2.1.11",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-prettier": "^3.1.4",
-    "onchange": "^7.0.2",
     "prettier": "^2.1.2",
     "ts-node": "^9.0.0",
     "typescript": "^4.0.3"
   },
   "dependencies": {
-    "@types/node": "^14.11.2",
     "socket.io": "^2.3.0"
   }
 }
